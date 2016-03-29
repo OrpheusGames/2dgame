@@ -14,6 +14,6 @@ public class Player : MonoBehaviour {
 	void Update () {
 		float moveH = Input.GetAxis("Horizontal");
 		float moveV = Input.GetAxis("Vertical");
-		_myRigidbody.velocity = new Vector2(0,  moveV);
+		_myRigidbody.velocity = new Vector2(moveH,  moveV);
 	}
 }
